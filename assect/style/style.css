@@ -519,12 +519,179 @@
 }
 
 
+/* Footer */
+
+.footer-warapper{
+    width: 100%;
+    background: black;
+    background-image: url("/assect/image/footer.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+footer.footer {
+    width: 90%;
+    overflow: hidden;
+    margin: 60px auto;
+      
+}
+
+.footer-overlay {
+    padding: 50px 60px;
+}
+.footer-grid{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.3fr;
+    grid-template-rows: auto;
+    gap: 40px;
+    color: white;
+}
+
+.col1 .f-logo{
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+.footer-grid h3 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.footer-grid ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-grid li {
+    margin-bottom: 8px;
+    font-size: 14px;
+    opacity: 0.85;
+}
+
+.email{
+    color: white;
+    text-decoration: underline;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.address,
+.phone {
+    font-size: 14px;
+    margin-top: 10px;
+    opacity: 0.85;
+}
+
+.social {
+    display: flex;
+    gap: 10px;
+    margin-top: 14px;
+}
+
+
+
 
 
 
 /* responsive */
 
 
+/* Tablet */
+@media (max-width: 992px) {
+    /* Banner */
+    .banner-titel{
+        font-size: 55px;
+    }
+    .banner-p{
+        font-size: 20px;
+    }
+    .latest-head{
+        padding: 20px 40px;
+    }
+    #cardContainer{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px 40px;
+    }
+
+    .card-sound{
+        width: 100%;
+    }
+
+
+    /* Popular Section */
+    .p-header{
+        padding: 20px 40px;
+    }
+
+    .image-grid{
+        grid-template-columns: repeat(2, 1fr);
+        width: 85%;
+    }
+    .img1{
+        grid-column: span 2;
+    }
+
+    /* popular Section 2 */
+    .cards-wrapper{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    /* catalogue section */
+    .feature-row{
+        gap: 0;
+        padding: 0 40px;
+    }
+
+    .feature-card{
+        width: 100%;
+        padding: 30px 20px;
+    }
+
+    /* choose section */
+    .parent{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 40px 40px 40px;
+        gap: 20px;
+    }
+
+    .div,
+    .div1,
+    .div6{
+        padding: 25px;
+    }
+
+    /* Hero section */
+    .hero{
+        width: 90%;
+        height: 350px;
+    }
+    .hero h1 {
+        font-size: 32px;
+    }
+    .hero p {
+        font-size: 14px;
+    }
+
+    /* Footer */
+    .footer-grid{
+        grid-template-columns: 1.5fr 1fr 1fr;
+    }
+
+    .footer-overlay{
+        padding: 40px;
+    }
+
+
+}
+
+
+
+
+/* mobile */
 @media (max-width: 600px) {
     /* navbar */
     .navbar{
@@ -614,7 +781,133 @@
         max-width: 350px;
     }
 
+    /*  Catalogue Section */
+    .feature-section {
+        padding: 40px 0;
+    }
+
+    .feature-row{
+        flex-direction: column;
+        max-width: 100%;
+        padding: 0 20px;
+    }
+    .feature-card{
+        width: 100%;
+        padding: 25px 20px;
+        text-align: left;
+    }
+
+    .feature-card h2 {
+        font-size: 18px;
+    }
+
+    .feature-card p {
+        font-size: 14px;
+    }
 
 
+    /* Choose Section */
+    .parent {
+        grid-template-columns: 1fr;
+        padding: 0px;
+        gap: 16px;
+        margin: 0px;
+    }
+
+    .div,
+    .div1,
+    .div6{
+        grid-column: span 1 !important;
+        padding: 20px;
+        text-align: center;
+        border-radius: 12px;
+    }
+
+    .choose-icon{
+        /* width: 40px; */
+        margin-bottom: 14px;
+        padding: 0px;
+    }
+
+    .div h1,
+    .div1 h1,
+    .div6 h1{
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    .div p,
+    .div1 p,
+    .div6 p{
+        font-size: 14px;
+        line-height: 1.45;
+    }
+
+    /* Connected / Hero Section */
+    .hero {
+        width: 90%;
+        height: 300px;
+        margin: 40px auto;
+        border-radius: 14px;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        padding: 10px 15px;
+    }
+
+    .hero h1 {
+        font-size: 26px;
+        margin-bottom: 10px;
+    }
+
+    .hero p {
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+    .hero-btn{
+        font-size: 13px;
+        padding: 8px 18px;
+    }
+
+    /* Footer */
+    .footer-overlay{
+        padding: 30px 20px;
+    }
+
+    .footer.footer{
+        width: 95%;
+        margin: 40px auto;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .col1 .f-logo {
+        width: 150px;
+    }
+
+    .footer-grid h3 {
+        font-size: 15px;
+    }
+
+    .footer-grid li {
+        font-size: 13px;
+        margin-bottom: 6px;
+    }
+
+    .email {
+        font-size: 18px;
+    }
+    .address,
+    .phone{
+        font-size: 13px;
+    }
+
+    .social {
+        gap: 12px;
+    }
 
 }
