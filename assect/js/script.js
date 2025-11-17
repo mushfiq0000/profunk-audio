@@ -1,6 +1,5 @@
 const container = document.getElementById("cardContainer")
 
-
 const cardTemplate = `
      <div class="card-b">
           <div class="card-sound">
@@ -53,4 +52,68 @@ const cardTemplate = `
 for (let i = 0; i < 12; i++){
     container.innerHTML += cardTemplate;
 }
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const cardData =[
+        {
+            img: "/assect/image/popular-I1.png",
+            title: "Anime Tones",
+            des: "80 anime tone sound effects to download in both mp3 and wav formats. This dynamic collection of classic anime sound effects contains."
+        },
+        {
+            img: "/assect/image/popular-I2.png",
+            title: "Plasma Core Sampler",
+            des: "80 anime tone sound effects to download in both mp3 and wav formats. This dynamic collection of classic anime sound effects contains."
+        },
+        {
+            img: "/assect/image/popular-I3.png",
+            title: "Sci-Fi Ul Tones",
+            des: "80 anime tone sound effects to download in both mp3 and wav formats. This dynamic collection of classic anime sound effects contains."
+        },
+        {
+            img: "/assect/image/popular-I4.png",
+            title: "Cellphone Vibrate",
+            des: "80 anime tone sound effects to download in both mp3 and wav formats. This dynamic collection of classic anime sound effects contains."
+        },
+        {
+            img: "/assect/image/popular-I5.png",
+            title: "Sci-Fi Computer Tones",
+            des: "80 anime tone sound effects to download in both mp3 and wav formats. This dynamic collection of classic anime sound effects contains."
+        },
+        {
+            img: "/assect/image/popular-I6.png",
+            title: "Dark Cinematic Whooshes",
+            des: "80 anime tone sound effects to download in both mp3 and wav formats. This dynamic collection of classic anime sound effects contains."
+        },    
+    ];
+
+    const cardsWrapper = document.getElementById("cardsWrapper");
+    cardsWrapper.innerHTML = cardData.map (card => `
+           
+          <div class="collection-card">
+            <div class="card-img-container">
+              <img src="${card.img}" alt="" class="card-img">
+            </div>
+
+            <div class="card-container">
+              <div class="titel-row">
+                <h2 class="">${card.title}</h2>
+                <div class="icon-badge">
+                  <img src="/assect/image/policy.png" alt="">
+                </div>
+              </div>
+              <p class="card-d">${card.des}</p>
+            </div>
+            <div class="card-f">
+              <button class="read-more-btn">
+                Read More
+              </button>
+            </div>
+          </div>
+        
+        `).join("")
+})  
 
