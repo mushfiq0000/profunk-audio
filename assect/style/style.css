@@ -426,6 +426,98 @@
 }
 
 
+/* Choose Section */
+
+
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 10px 180px 50px 180px;
+
+
+}
+    
+.div {
+    background: rgb(245, 247, 250);
+    padding: 30px;
+    border-radius: 14px;
+    
+}
+
+.div1 {
+    grid-column: span 2;
+    background: rgb(247, 241, 234);
+    padding: 30px;
+    border-radius: 14px;
+}
+
+.div6 {
+    grid-column: span 2;
+    background: black;
+    color: white;
+    padding: 30px;
+    border-radius: 14px;
+}
+
+.icon {
+    width: 26px;
+    height: 26px;
+    margin-bottom: 16px;
+}
+
+
+/* Connected Section */
+
+.hero{
+    width: 80%;
+    margin: 80px auto;
+    height: 400px;
+    background-image: url("/assect/image/hero.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.hero-content{
+    text-align: center;
+    color: white;
+    max-width: 600px;
+    padding: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.hero p{
+    font-size: 15px;
+    line-height: 1.5;
+    opacity: 0.9;
+    margin-bottom: 28px;
+}
+
+.hero-btn{
+    display: inline-block;
+    padding: 10px 22px;
+    background: white;
+    color: black;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
 
 
 
