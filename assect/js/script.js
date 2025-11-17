@@ -1,5 +1,7 @@
 const container = document.getElementById("cardContainer")
 
+
+// Latest Section daynamic Card 
 const cardTemplate = `
      <div class="card-b">
           <div class="card-sound">
@@ -48,15 +50,17 @@ const cardTemplate = `
         </div>
 `
 
-
+// make 12 card
 for (let i = 0; i < 12; i++){
     container.innerHTML += cardTemplate;
 }
 
 
 
+// Popular Section 2 daynamic Card
 
 document.addEventListener("DOMContentLoaded", () => {
+  // card information
     const cardData =[
         {
             img: "/assect/image/popular-I1.png",
@@ -90,6 +94,8 @@ document.addEventListener("DOMContentLoaded", () => {
         },    
     ];
 
+
+    // creat daynamic card using card data
     const cardsWrapper = document.getElementById("cardsWrapper");
     cardsWrapper.innerHTML = cardData.map (card => `
            
